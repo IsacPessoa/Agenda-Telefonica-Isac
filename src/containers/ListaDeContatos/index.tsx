@@ -1,6 +1,6 @@
 const ListaDeContatos = () => (
   <main>
-    <p>Total de contatos: </p>
+    <p>Total de contatos presentes na agenda: </p>
   </main>
 )
 
