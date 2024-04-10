@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components'
+import styled, { createGlobalStyle } from 'styled-components'
 
 const Estiloglobal = createGlobalStyle`
   * {
@@ -7,6 +7,11 @@ const Estiloglobal = createGlobalStyle`
     box-sizing: border-box;
     font-family: Roboto, sans-serif;
   }
+`
+
+export const Container = styled.div`
+  display: grid;
+  grit-template-columns: 224px auto;
 `
 
 export default Estiloglobal

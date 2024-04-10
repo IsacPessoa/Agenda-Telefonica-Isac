@@ -1,8 +1,14 @@
+import ListaDeContatos from './containers/ListaDeContatos'
+import Estiloglobal, { Container } from './styles/index '
+
 function App() {
   return (
-    <div className="App">
-      <h1>Olá</h1>
-    </div>
+    <>
+      <Estiloglobal />
+      <Container>
+        <ListaDeContatos />
+      </Container>
+    </>
   )
 }
 
