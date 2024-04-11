@@ -1,11 +1,12 @@
 import styled from 'styled-components'
+import variaveis from '../../styles/variaveis'
 
 export const Card = styled.div`
   background-color: #bbb8b4;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   padding: 16px;
   margin-bottom: 32px;
-  border-radius: 16px;
+  border-radius: 12px;
   width: 50%;
 `
 
@@ -19,8 +20,8 @@ export const Tag = styled.span`
   padding: 4px 8px;
   font-size: 16px;
   font-weight: bold;
-  color: #111;
-  background-color: #eeedec;
+  color: #fff;
+  background-color: ${variaveis.azul};
   border-radius: 8px;
   width: 80px;
   display: flex;
@@ -35,6 +36,7 @@ export const Info = styled.textarea`
   display: inline-block;
   resize: none;
   border: none;
+  width: 400px;
 `
 
 export const BarraAcoes = styled.div`
@@ -45,12 +47,20 @@ export const BarraAcoes = styled.div`
 
 export const Botao = styled.button`
   font-weight: bold;
-  font-size: 12px;
+  font-size: 16px;
   color: #fff;
   padding: 8px 12px;
   border: none;
   cursor: pointer;
-  background-color: #123;
-  border-radius: 8px;
+  background-color: ${variaveis.amarelo2};
+  border-radius: 5px;
   margin-right: 12px;
+`
+
+export const BotaoSalvar = styled(Botao)`
+  background-color: ${variaveis.verde};
+`
+
+export const BotaoCancelarExcluir = styled(Botao)`
+  background-color: ${variaveis.vermelho};
 `
