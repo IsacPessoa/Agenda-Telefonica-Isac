@@ -2,18 +2,18 @@ import styled from 'styled-components'
 import variaveis from '../../styles/variaveis'
 
 export const Card = styled.div`
-  background-color: #bbb8b4;
+  background-color: #eeedec;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   padding: 16px;
   margin-bottom: 32px;
   border-radius: 12px;
-  width: 50%;
 `
 
 export const Nome = styled.h3`
   font-weight: bold;
   font-size: 24px;
   margin-bottom: 24px;
+  color: #111;
 `
 
 export const Tag = styled.span`
@@ -30,7 +30,8 @@ export const Tag = styled.span`
 export const Info = styled.textarea`
   padding: 4px 8px;
   font-size: 16px;
-  color: #fff;
+  font-style: italic;
+  color: #111;
   background-color: transparent;
   border-radius: 8px;
   display: inline-block;
