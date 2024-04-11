@@ -9,6 +9,7 @@ export const Aside = styled.aside`
 export const Campo = styled.input`
   padding: 8px;
   border-radius: 8px;
+  font-size: 16px;
   font-weight: bold;
   background-color: #fff;
   color: #111;
