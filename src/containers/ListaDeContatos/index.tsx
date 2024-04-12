@@ -1,7 +1,7 @@
 import { useSelector } from 'react-redux'
 
 import Contato from '../../components/Contato'
-import { Container } from './styles'
+import { Container, Resultado } from './styles'
 import { RootReducer } from '../../store'
 
 const ListaDeContatos = () => {
@@ -16,7 +16,7 @@ const ListaDeContatos = () => {
 
   return (
     <Container>
-      <p>Resultados para: {termo}</p>
+      <Resultado>Resultado(s) para: {termo}</Resultado>
       <ul>
         {filtraContatos().map((c) => (
           <li key={c.nome}>
