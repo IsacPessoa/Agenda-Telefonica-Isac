@@ -16,6 +16,14 @@ export const Nome = styled.h3`
   color: #111;
 `
 
+export const InputNome = styled.input`
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 24px;
+  color: #111;
+  background-color: transparent;
+`
+
 export const Tag = styled.span`
   padding: 4px 8px;
   font-size: 16px;
