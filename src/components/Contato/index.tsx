@@ -1,13 +1,14 @@
 import { useState } from 'react'
 import * as S from './styles'
+import { useDispatch } from 'react-redux'
 
-type Props = {
-  nome: string
-  numero: number
-  email: string
-}
+import { remover } from '../../store/reducers/contatos'
+import ContatoClass from '../../models/Contato'
 
-const Contato = ({ email, numero, nome }: Props) => {
+type Props = ContatoClass
+
+const Contato = ({ email, numero, nome, id }: Props) => {
+  const dispatch = useDispatch()
   const [estaEditando, setEstaEditando] = useState(false)
 
   return (
@@ -28,7 +29,9 @@ const Contato = ({ email, numero, nome }: Props) => {
         ) : (
           <>
             <S.Botao onClick={() => setEstaEditando(true)}>Editar</S.Botao>
-            <S.BotaoCancelarExcluir>Excluir</S.BotaoCancelarExcluir>
+            <S.BotaoCancelarExcluir onClick={() => dispatch(remover(id))}>
+              Excluir
+            </S.BotaoCancelarExcluir>
           </>
         )}
       </S.BarraAcoes>
