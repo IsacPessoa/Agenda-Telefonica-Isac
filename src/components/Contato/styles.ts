@@ -35,19 +35,6 @@ export const Tag = styled.span`
   display: flex;
 `
 
-export const Info = styled.textarea`
-  padding: 4px 8px;
-  font-size: 16px;
-  font-style: italic;
-  color: #111;
-  background-color: transparent;
-  border-radius: 8px;
-  display: inline-block;
-  resize: none;
-  border: none;
-  width: 400px;
-`
-
 export const BarraAcoes = styled.div`
   border-top: 2px solid rgba(0, 0, 0, 0.1);
   padding-top: 16px;
@@ -64,10 +51,6 @@ export const Botao = styled.button`
   background-color: ${variaveis.amarelo2};
   border-radius: 5px;
   margin-right: 12px;
-`
-
-export const BotaoSalvar = styled(Botao)`
-  background-color: ${variaveis.verde};
 `
 
 export const BotaoCancelarExcluir = styled(Botao)`

@@ -4,6 +4,7 @@ import { useDispatch } from 'react-redux'
 
 import { remover, editar } from '../../store/reducers/contatos'
 import ContatoClass from '../../models/Contato'
+import { BotaoSalvar, Info } from '../../styles/index '
 
 type Props = ContatoClass
 
@@ -55,21 +56,21 @@ const Contato = ({
       )}
 
       <S.Tag>Número:</S.Tag>
-      <S.Info
+      <Info
         disabled={!estaEditando}
         value={numero}
         onChange={(evento) => setNumero(evento.target.value)}
-      ></S.Info>
+      ></Info>
       <S.Tag>E-mail:</S.Tag>
-      <S.Info
+      <Info
         disabled={!estaEditando}
         value={email}
         onChange={(evento) => setEmail(evento.target.value)}
-      ></S.Info>
+      ></Info>
       <S.BarraAcoes>
         {estaEditando ? (
           <>
-            <S.BotaoSalvar
+            <BotaoSalvar
               onClick={() => {
                 dispatch(
                   editar({
@@ -83,7 +84,7 @@ const Contato = ({
               }}
             >
               Salvar
-            </S.BotaoSalvar>
+            </BotaoSalvar>
             <S.BotaoCancelarExcluir onClick={desfazerEdicao}>
               Cancelar
             </S.BotaoCancelarExcluir>
