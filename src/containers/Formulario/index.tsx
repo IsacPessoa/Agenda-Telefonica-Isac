@@ -10,7 +10,6 @@ import {
   Titulo
 } from '../../styles/index '
 import { Form, Informacoes } from './styles'
-import Contato from '../../models/Contato'
 import { cadastrar } from '../../store/reducers/contatos'
 
 const Formulario = () => {
@@ -23,9 +22,8 @@ const Formulario = () => {
 
   const cadastrarContato = (evento: FormEvent) => {
     evento.preventDefault()
-    const contatoParaAdicionar = new Contato(nome, numero, email, 9)
 
-    dispatch(cadastrar(contatoParaAdicionar))
+    dispatch(cadastrar({ nome, numero, email }))
     navigate('/')
   }
 
