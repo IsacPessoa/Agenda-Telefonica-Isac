@@ -1,6 +1,5 @@
 import styled, { createGlobalStyle } from 'styled-components'
 import variaveis from './variaveis'
-import { Botao } from '../components/Contato/styles'
 
 const Estiloglobal = createGlobalStyle`
   * {
@@ -52,6 +51,22 @@ export const Info = styled.textarea`
   resize: none;
   border: none;
   width: 400px;
+`
+
+export const Botao = styled.button`
+  font-weight: bold;
+  font-size: 16px;
+  color: #fff;
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+  background-color: ${variaveis.amarelo2};
+  border-radius: 5px;
+  margin-right: 12px;
+`
+
+export const BotaoVoltar = styled(Botao)`
+  background-color: ${variaveis.amarelo2};
 `
 
 export const InfoCadastro = styled(Info)`

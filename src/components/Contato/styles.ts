@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import variaveis from '../../styles/variaveis'
+import { Botao } from '../../styles/index '
 
 export const Card = styled.div`
   background-color: #eeedec;
@@ -39,18 +40,6 @@ export const BarraAcoes = styled.div`
   border-top: 2px solid rgba(0, 0, 0, 0.1);
   padding-top: 16px;
   margin-top: 8px;
-`
-
-export const Botao = styled.button`
-  font-weight: bold;
-  font-size: 16px;
-  color: #fff;
-  padding: 8px 12px;
-  border: none;
-  cursor: pointer;
-  background-color: ${variaveis.amarelo2};
-  border-radius: 5px;
-  margin-right: 12px;
 `
 
 export const BotaoCancelarExcluir = styled(Botao)`
